@@ -101,8 +101,7 @@ for i in range(len(classes)):
             #cv.imshow("final mask", img_array)
             #cv.waitKey(0)
             #cv.destroyAllWindows()
-            
-						aug_img = (aug_img.flatten()) #convert to 1-d array, so each row in the csv will be an image
+            aug_img = (aug_img.flatten()) #convert to 1-d array, so each row in the csv will be an image
             aug_img  = aug_img.reshape(-1, 1).T
 
             with open(filename, 'ab') as f:  #save image in a csv file
